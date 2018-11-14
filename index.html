@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        @font-face {
+            font-family: gobold;
+            src: url(fonts/gobold.TTF);
+        }
+        body{
+            
+        }
+        #banner{
+            font-family: gobold;
+            width: 970px;
+            height: 250px;
+            background-image: url("img/bg.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+        }
+        #cartela1{
+            display: flex;
+            flex-direction: row;   
+            width: 970px;
+            height: 250px;
+        }
+        #sec1{
+            display: inline-block;
+            width: 25%;
+            text-transform: uppercase;
+            }
+        #sec1 p{
+            border: 6px solid #f83625;
+            margin: 0px 35px;
+            padding: 4px 0;
+            -ms-transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+            }
+        #sec2{
+            display: inline-block;
+            width: 49%;
+            height: 250px;
+            background-image: url("img/gernand.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 250%;
+            overflow: hidden;
+            }
+        #sec2 p{
+            color: white;
+            background-color: rgba(215, 0, 0, 0.7);
+            padding: 4px 10px;
+        } 
+        #sec3{
+            display: inline-block;
+            width: 25%;
+            }
+
+        #clique{
+            font-size: 22px;
+            width: 75%;
+            padding: 4px 10px;
+            margin: 0;
+            color: black;
+            background-color: #e0e0e0;
+        }
+        #compartilhe{
+            font-size: 22px;
+            width: 75%;
+            color: white;
+            background-color: black;
+            padding: 4px 10px;
+            margin: 0;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 32px;
+            color: #f83625;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+        }
+        #cartela2{
+            display: flex;
+            flex-direction: row;   
+            width: 970px;
+            height: 250px;
+        }
+        #cartela2 .content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-left: 60px;;
+        }
+        #cartela2 .content #compartilhando{
+            color: white;
+            background-color: rgba(215, 0, 0, 1);
+            padding: 4px 10px;
+            margin: 0;
+        }
+
+        #cartela2 .content #sem{
+            color: black;
+            padding: 4px 10px;
+            margin: 0;
+        }
+
+        #cartela3{
+            display: flex;
+            flex-direction: row;   
+            width: 970px;
+            height: 250px;
+        }
+        #cartela3 .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 260px;
+            text-align: left;
+        }
+        #cartela3 .content #para{
+            color: white;
+            background-color: rgba(215, 0, 0, 1);
+            padding: 4px 10px;
+            margin: 0;
+            text-align: left;
+        }
+        #cartela3 .content #ta{
+            color: black;
+            padding: 4px 10px;
+            margin: 0;
+            text-align: left;
+        }
+        #cartela3 .content #fake{
+            color: black;
+            padding: 4px 10px;
+            margin: 0;
+            text-align: left;
+            margin-left: -22px;;
+        }
+        #cartela4{
+            display: flex;
+            flex-direction: row;   
+            width: 970px;
+            height: 250px;
+        }
+        #cartela4 .content{
+            width: 970px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+        #cartela4 .content div{
+            margin-left: 50px;
+            padding-left: 32px;
+            border-left: 1px solid black;
+
+        }
+        #cartela4 .content #naocompartilhe{
+            color: white;
+            background-color: rgba(215, 0, 0, 1);
+            padding: 4px 10px;
+            margin: 0;
+            text-align: left;
+        }
+        .hide{
+            display: none !important;
+        }
+
+        .typewriter {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .09em solid black; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+            animation: 
+                typing 0.8s steps(40, end),
+                blink-caret .75s step-end infinite;
+            }
+
+            /* The typing effect */
+            @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+            }
+
+            /* The typewriter cursor effect */
+            @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: black; }
+            }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <div id="cartela1">
+            <div id="sec1">
+                <div class="content">
+                    <p>Exclusivo</p>
+                </div>
+            </div>
+            <div id="sec2">
+                <div class="content">
+                    <p id="fora">Gernand Lopes fora da Record!</p>
+                </div>
+            </div>
+            <div id="sec3">
+                <div class="content">   
+                    <p id="clique">Clique aqui</p>
+                    <p id="compartilhe">e compartilhe</p>
+                </div>
+            </div>
+        </div>
+        <div id="cartela2">
+            <div class="content">
+                <p id="compartilhando">Compartilhando</p>
+                <p id="sem">sem saber se é verdade?</p>
+            </div>
+        </div>
+        <div id="cartela3">
+            <div class="content">
+                <p id="para">Para</p>
+                <p id="ta">que tá</p>
+                <p id="fake">fake</p>
+            </div>
+        </div>
+        <div id="cartela4">
+            <div class="content">
+                <p id="naocompartilhe">Fake news. Não compartilhe essa ideia!</p>
+                <div>
+                    <img src="img/tnh.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script>
+        
+        document.getElementById("cartela1").classList.add("hide");
+        document.getElementById("cartela2").classList.add("hide");
+        document.getElementById("cartela3").classList.add("hide");
+        document.getElementById("cartela4").classList.add("hide");
+
+        function anima(){
+            setTimeout(function troca1(){
+                document.getElementById("cartela4").classList.add("hide");
+                document.getElementById("cartela1").classList.remove("hide");
+
+                document.getElementById("fora").classList.add("typewriter");
+
+            },0000);
+            setTimeout(function troca2(){
+                document.getElementById("cartela1").classList.add("hide");
+                document.getElementById("cartela2").classList.remove("hide");
+
+                document.getElementById("sem").classList.add("typewriter");
+            },4000);
+            setTimeout(function troca3(){
+                document.getElementById("cartela2").classList.add("hide");
+                document.getElementById("cartela3").classList.remove("hide");
+
+            },8000);
+            setTimeout(function troca4(){
+                document.getElementById("cartela3").classList.add("hide");
+                document.getElementById("cartela4").classList.remove("hide");
+
+            },12000);
+            
+            setTimeout(anima, 16000);
+
+        }
+        anima();
+
+
+    </script>
+</body>
+</html>
